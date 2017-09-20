@@ -1,0 +1,34 @@
+{
+    "name": "biklabot",
+    "description": "",
+    "license": "project license",
+    "status": "Alpha",
+    "homepage": "http://regenhans.github.io/twitter-civicbiking-bot/",
+    "repository": "https://github.com/regenhans/twitter-civicbiking-bot",
+    "type": "Twitter Earthquake",
+    "thumbnail": "",
+    "geography": [ ],
+    "contact": {
+        "name": "regenhans",
+        "email": "hans@hackergarage.mx",
+        "url": "https://github.com/regenhans/"
+    },
+    "partners": [
+        {
+            "name": "Earthquake",
+            "email": ""
+        }
+    ],
+    "data": [
+        {
+            "name": "[required if have dataset] dataset name",
+            "url": "[required if have dataset] dataset URL",
+            "metadata": "dataset metadata URL"
+        }
+    ],
+    "tags": [
+        "twitter api", "bot", "stream api"
+    ],
+    "links": [],
+    "id": "https://raw.githubusercontent.com/DCgov/civic.json/master/schemas/schema-v1.json"
+}

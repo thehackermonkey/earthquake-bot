@@ -1,0 +1,28 @@
+{
+  "name": "twitter-scrapper",
+  "version": "1.0.0",
+  "description": "A twitter API bot looking for tweets containing certain keywords",
+  "main": "streambot.js",
+  "dependencies": {
+    "csv": "^1.1.0",
+    "js-image-generator": "^1.0.2",
+    "moment": "^2.14.1",
+    "nodecsv": "^1.1.0",
+    "twit": "^2.2.4",
+    "twitter-screen-scrape": "^1.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hans-zen/twitter-dictionary-scrapper.git"
+  },
+  "author": "Hans R",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hans-zen/twitter-dictionary-scrapper/issues"
+  },
+  "homepage": "https://github.com/hans-zen/twitter-dictionary-scrapper#readme"
+}
