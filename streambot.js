@@ -86,7 +86,7 @@ if (!isReply(tweet)) {
 
 
 
-		appendCSV(datacsv, './csv/tweets-20-sep.csv', function(error){
+		appendCSV(datacsv, './csv/tweets-21-sep.csv', function(error){
 		    if (!error) {
 		      console.log('agregado a lista de reportes');
 		    }

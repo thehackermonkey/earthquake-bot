@@ -1,13 +1,13 @@
-#Biklabot
+# Tweetbot sismo 2017
 
-##Sobre el proyecto
+## Sobre el proyecto
 
 Este es un bot cívico que utiliza el streaming API de twitter para encontrar tweets donde se reporten personas desaparecidas y respoden con una herramienta de google. Lamentablemente no cuento con el tiempo para mejorarlo
 
+[Los reportes por día se encuentran aquí en formato CSV](https://github.com/regenhans/earthquake-bot/tree/master/csv)
 
-[Documento de espacificación de proyecto.](https://github.com/regenhans/twitter-civicbiking-bot/blob/master/spec.md)
 
-##Guía de uso
+## Guía de uso
 
 1. Instalar [Node JS](https://nodejs.org/en/)
 
