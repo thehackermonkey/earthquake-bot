@@ -10,7 +10,7 @@ var Twit = require('twit'),
 var query = {
   //follow: '263809798'// @trafico_zmg twitter ID's => 263809798
   // follow: '236640161' //ID for testing @regenhans
-  track: ' localizar, busco a, no encuentro a, #sebusca, #SEBUSCA'
+  track: 'no puedo localizar,   #sebusca, #SEBUSCA'
   // (you can find the id of a twitter account here : https://tweeterid.com/)
 }
 
@@ -86,7 +86,7 @@ if (!isReply(tweet)) {
 
 
 
-		appendCSV(datacsv, './csv/tweets-21-sep.csv', function(error){
+		appendCSV(datacsv, './csv/tweets-21-sep-sebusca.csv', function(error){
 		    if (!error) {
 		      console.log('agregado a lista de reportes');
 		    }
