@@ -10,7 +10,7 @@ var Twit = require('twit'),
 var query = {
   //follow: '263809798'// @trafico_zmg twitter ID's => 263809798
   // follow: '236640161' //ID for testing @regenhans
-  track: ' localizar, busco a, saben de, no encuentro'
+  track: ' localizar, busco a, no encuentro a, #sebusca, #SEBUSCA'
   // (you can find the id of a twitter account here : https://tweeterid.com/)
 }
 
@@ -49,25 +49,25 @@ stream.on('tweet', function (tweet) {
 //         break; //end loop if  at least one word match
 //       }
 // }
-	var tweeText = tweet.text ,
-		createdAt = moment(tweet.created_at).format('MMMM Do YYYY, h:mm:ss a'),
-		user = tweet.user.screen_name;
+	// var tweeText = tweet.text ,
+	// 	createdAt = moment(tweet.created_at).format('MMMM Do YYYY, h:mm:ss a'),
+	// 	user = tweet.user.screen_name;
+	//
+	// var datacsv = [[createdAt, user, tweeText]];
+	//
+	//
+	//
+	// appendCSV(datacsv, './csv/tweets.csv', function(error){
+	//     if (!error) {
+	//       console.log('agregado a lista de reportes');
+	//     }
+	//     else {
+	//       console.log('algo salió mal al intentar agregar a tweets.csv');
+	//     }
+	// });
+	//
+	// console.log(tweeText)
 
-	var datacsv = [[createdAt, user, tweeText]];
-
-	console.log(datacsv);
-
-	appendCSV(datacsv, './csv/tweets.csv', function(error){
-	    if (!error) {
-	      console.log('agregado a lista de reportes');
-	    }
-	    else {
-	      console.log('algo salió mal al intentar agregar a tweets.csv');
-	    }
-	});
-
-	console.log(tweeText)
-	console.log(user)
 
 	var username = ' @' + user,
 		reportId = Math.floor(Math.random()*(1000-1)),
@@ -78,14 +78,33 @@ stream.on('tweet', function (tweet) {
 
 
 if (!isReply(tweet)) {
-	T.post('statuses/update', status, function(err, data, response) {
-		if(!err){
-			console.log('tweet enviado');
-		}
-		else{
-			console.log('algo salió mal al enviar el tweet:' + err);
-		}
-	})
+		var tweeText = tweet.text ,
+			createdAt = moment(tweet.created_at).format('MMMM Do YYYY, h:mm:ss a'),
+			user = tweet.user.screen_name;
+
+		var datacsv = [[createdAt, user, tweeText]];
+
+
+
+		appendCSV(datacsv, './csv/tweets-20-sep.csv', function(error){
+		    if (!error) {
+		      console.log('agregado a lista de reportes');
+		    }
+		    else {
+		      console.log('algo salió mal al intentar agregar a tweets.csv');
+		    }
+		});
+
+		console.log(tweeText)
+	// T.post('statuses/update', status, function(err, data, response) {
+	// 	if(!err){
+	// 		console.log('tweet enviado');
+	// 	}
+	// 	else{
+	// 		console.log('algo salió mal al enviar el tweet:' + err);
+	// 	}
+	// })
+
 }
 
 
